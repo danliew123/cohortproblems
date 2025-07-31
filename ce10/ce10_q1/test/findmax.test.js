@@ -8,7 +8,7 @@ describe('testing findmax', () => {
     })
     // TODO: a test that results in error, it should throw an error that the test won't catch
     test('a test that throws error', () => {
-        expect(() => findmax([a, b, c])).toThrow()
+        findmax(null)
     })
     // TODO: a test that results in pass
     test('a test that passes', () => {
@@ -47,7 +47,7 @@ describe('testing findmax', () => {
     })
     // arrays with more than one ordinal values and the max value is not at index 0 nor index N-1.
     test('arrays with more than one ordinal values and the max value is not at index 0 nor index N-1', () => {
-        result = findmax([67,32,14,69,45,54])
+        result = findmax([67,14,69,54])
         expect(result).toBe(69)
     })
     // null value
